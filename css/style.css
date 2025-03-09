@@ -239,6 +239,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    pointer-events: none; /* Needed or the video can't be played due to overylay text in project section */
   }
   
   /* Show overlay on hover */
@@ -248,7 +249,7 @@ body{
   
   /* Overlay text styling */
   .text {
-    color: white;
+    color: black;
     font-size: 20px;
     text-align: center;
     font-weight: bold;
@@ -415,3 +416,12 @@ footer .link-group a:hover{
     animation: pulse 3s infinite;
 }
 
+.video-container video {
+    width: 50%;  /* Adjust the size */
+    display: block;
+    margin: 0 auto; /* Centers the video */
+  }
+
+  a {
+    text-decoration: none; /* Removes underline from text and the social media pictures*/
+  }

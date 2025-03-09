@@ -37,7 +37,12 @@
 
     <!-- jquery cdn link  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- favicon (website logo)-->
+    <link rel="icon" type="image/x-icon" href="/images/zlogo.png">
   </head>
+
+  
   <body>
     <!-- navbar starts -->
     <nav
@@ -79,9 +84,13 @@
             <li class="nav-item">
               <a class="nav-link" href="#volunteer">Volunteering</a>
             </li>
+            
           </ul>
         </div>
-        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
+        
+        <a href="#contact">
+          <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
+        </a>
       </div>
     </nav>
     <!-- navbar ends here -->
@@ -395,8 +404,8 @@
             <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
               <!-- here download attribute is used for adding download functionality to button  -->
               <a
-                href="Entry Level Web Developer Resume.pdf"
-                download="SampleCV"
+                href="finalResume.pdf"
+                download="Zane's CV"
                 style="text-decoration: none;color: #fff;"
                 >Download CV</a
               >
@@ -426,7 +435,7 @@
               
               <!-- Overlay effect -->
               <div class="overlay">
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</div>
+                <div class="text">This Landlord Simulation app is a web-based platform built with Flask that simulates a real-life interaction between potential tenants and landlords. The app allows users to browse various property listings, ask questions to the landlord (modeled by Google Gemini for natural conversation), and track their performance by asking relevant questions. I used SpaCy for natural language processing (NLP), specifically to calculate cosine similarity between the user's questions and a predefined set of "good questions. </div>
               </div>
             </div>
           
@@ -435,7 +444,8 @@
               <span class="badge bg-secondary badge-pill">Python</span>
               <span class="badge bg-secondary badge-pill">Flask</span>
               <span class="badge bg-secondary badge-pill mb-2">React</span>
-              <a href="https://github.com/wavyzany" target="_blank">
+              <span class="badge bg-secondary badge-pill mb-2">SpaCy</span>
+              <a href="https://github.com/WavyZany/simulationhousingapp" target="_blank">
                 <button href="" class="rounded-pill github">
                   <i class="bi bi-github"></i>
                 </button>
@@ -452,11 +462,18 @@
           <!-- Project 2-->
           <div class="post col-md-4 game all col-10 mt-3 mt-md-0">
             <div class="container">  
-              <img src="images/2048game.png" class="image card-img-top" alt="Emotion Classification System" />
-              
+              <!-- Video element instead of img -->
+              <div class="video-container">
+                <video controls>
+                  <source src="videos/emotionclassvideo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+          
               <!-- Overlay effect -->
               <div class="overlay">
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</div>
+                <div class="text">
+                  The Emotion Classification System is a machine learning project that uses computer vision and deep learning techniques to recognize human emotions based on facial and hand landmarks. I used OpenCV to capture real-time video and MediaPipe for extracting facial and hand landmarks from video frames. The landmarks are then processed and fed into a pre-trained TensorFlow model that classifies emotions such as happiness, sadness, and surprise.          </div>
               </div>
             </div>
           
@@ -465,15 +482,14 @@
               <span class="badge bg-secondary badge-pill">Python</span>
               <span class="badge bg-secondary badge-pill">TensorFlow</span>
               <span class="badge bg-secondary badge-pill mb-2">OpenCV</span>
-              <a href="https://github.com/wavyzany" target="_blank">
-                <button href="" class="rounded-pill github">
+              <a href="https://github.com/WavyZany/Emotion-Classification-System" target="_blank">
+                <button class="rounded-pill github">
                   <i class="bi bi-github"></i>
                 </button>
-        
-                </a>
+              </a>
             </div>
-            
           </div>
+          
 
           
 
@@ -482,11 +498,11 @@
           <!-- Project 3-->
           <div class="post col-md-4 game all col-10 mt-3 mt-md-0">
             <div class="container">  
-              <img src="images/2048game.png" class="image card-img-top" alt="Portfolio Website" />
+              <img src="images/portfoliowebsite.png" class="image card-img-top" alt="Portfolio Website" />
               
               <!-- Overlay effect -->
               <div class="overlay">
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</div>
+                <div class="text">I built my portfolio website using HTML, CSS, JavaScript, and Bootstrap to create a clean and responsive design. I used Bootstrap's grid system and components to ensure a mobile-friendly layout while incorporating custom CSS and JavaScript for interactive elements.</div>
               </div>
             </div>
           
@@ -494,8 +510,9 @@
               <h4 class="card-title">Portfolio Website</h4>
               <span class="badge bg-secondary badge-pill">HTML&CSS</span>
               <span class="badge bg-secondary badge-pill">JavaScript</span>
+              <span class="badge bg-secondary badge-pill">Bootstrap</span>
               
-              <a href="https://github.com/wavyzany" target="_blank">
+              <a href="https://github.com/WavyZany/portfolio-website" target="_blank">
                 <button href="" class="rounded-pill github">
                   <i class="bi bi-github"></i>
                 </button>
@@ -512,11 +529,11 @@
           <!-- Project 4-->
           <div class="post col-md-4 game all col-10 mt-3 mt-md-0">
             <div class="container">  
-              <img src="images/2048game.png" class="image card-img-top" alt="Math Assessment Creator" />
+              <img src="images/mathtraininggame.png" class="image card-img-top" alt="Math Assessment Creator" />
               
               <!-- Overlay effect -->
               <div class="overlay">
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</div>
+                <div class="text">I created a math training game in Java using Java AWT for the graphical user interface. The game challenges players with math problems and keeps track of their scores, displaying a leaderboard sorted using sorting algorithms like quick sort and merge sort. Implementing these algorithms improved my understanding of data structures, algorithm efficiency, and UI design in Java. This project helped me gain experience in event-driven programming and reinforced my ability to manage and display dynamic data effectively.</div>
               </div>
             </div>
           
@@ -525,7 +542,7 @@
               <span class="badge bg-secondary badge-pill">Java</span>
               <span class="badge bg-secondary badge-pill">Java AWT</span>
               
-              <a href="https://github.com/wavyzany" target="_blank">
+              <a href="https://github.com/WavyZany/Math_Training_Game" target="_blank">
                 <button href="" class="rounded-pill github">
                   <i class="bi bi-github"></i>
                 </button>
@@ -695,7 +712,7 @@
                 <a href="">High School Math Tutoring</a>
               </h4>
               <p class="text-muted">
-                I provide tutoring classes for all high school math courses in the Ontario curriculum.
+                I provide private, tutoring classes for all high school math courses in the Ontario curriculum.
               </p>
               <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#tutoringReadMore">Read More</a>
             </div>
@@ -708,7 +725,7 @@
         <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
           <div class="card">
             <img
-              src="images/dictionary.png"
+              src="images/markhamsoccercamp.jpg"
               class="card-img-top rounded-4"
               alt="..."
             />
@@ -719,7 +736,7 @@
                 <a href="">Soccer Camp Counsellor</a>
               </h4>
               <p class="text-muted">
-                Using my passion and 10 years of experience in soccer to coach youth in my area
+                Using my passion and 10 years of experience in soccer to coach youth in my area.
               </p>
               <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#summercampReadMore">Read More</a>
             </div>
@@ -741,12 +758,12 @@
               
               <div class="modal-body px-4">
                 <div class="img">
-                  <img src="images/qvex.png" class="img-fluid" alt="">
+                  <img src="images/thenewgenlogo.png" class="img-fluid" alt="">
                 </div>
                 <div class="content mt-3">
                   <small>By Zane Al-Hamwy</small
-                    ><span class="text-muted ms-2">September 2024 - January 2025</span>
-                  <h4 class="card-title mt-3">QVEX Software Developer</h4>
+                    ><span class="text-muted ms-2">June 2020 - July 2022</span>
+                  <h4 class="card-title mt-3">Founding Executive Member</h4>
                   <div class="social-links mt-4">
                     <a href="https://www.instagram.com/zane.codes/" target="_blank">
                       <button href="" class="rounded-pill instagram">
@@ -768,7 +785,7 @@
                       </button>
                       </a>
                   </div>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                  <p class="text-muted mt-3">As a founding executive member of The New Gen, a federally registered, youth-led nonprofit in Canada, I had the incredible opportunity to help build something meaningful from the ground up. I worked on the social media team, where I focused on growing our online presence, creating engaging content, and connecting with our audience to spread our mission. Managing our digital platforms allowed me to develop skills in branding, marketing, and community engagement while working alongside a passionate team. Being part of the founding team was an invaluable experience—I got to see firsthand what it takes to launch and sustain a nonprofit, and it reinforced my passion for advocacy, teamwork, and making an impact.</p>
                 </div>
               </div>
              
@@ -789,12 +806,12 @@
               
               <div class="modal-body px-4">
                 <div class="img">
-                  <img src="images/qvex.png" class="img-fluid" alt="">
+                  <img src="images/tutoring.png" class="img-fluid" alt="">
                 </div>
                 <div class="content mt-3">
                   <small>By Zane Al-Hamwy</small
-                    ><span class="text-muted ms-2">September 2024 - January 2025</span>
-                  <h4 class="card-title mt-3">QVEX Software Developer</h4>
+                    ><span class="text-muted ms-2">January 2025 - Present</span>
+                  <h4 class="card-title mt-3">High School Math Tutor</h4>
                   <div class="social-links mt-4">
                     <a href="https://www.instagram.com/zane.codes/" target="_blank">
                       <button href="" class="rounded-pill instagram">
@@ -816,7 +833,7 @@
                       </button>
                       </a>
                   </div>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                  <p class="text-muted mt-3">I tutor high school students in all math subjects! Due to my love for math, I wanted to help out others grow academically. Personally, I have had some great tutors that have given me so many tricks and tips to succeed in a competitive setting. Specifically, my Grade 11 "Functions" tutor was quite special to me. He always kept a positive and encouraging attitude no matter how many questions I asked. He taught me how to be resilient in my efforts and to not quit when things get hard. This lesson has been extremely valuable to me because I still carry this resilience every day. When people ask me why my grades are high, I attribute it to my hard work and ability to keep-pushing rather than natural intelligence.</p>
                 </div>
               </div>
              
@@ -838,12 +855,12 @@
               
               <div class="modal-body px-4">
                 <div class="img">
-                  <img src="images/qvex.png" class="img-fluid" alt="">
+                  <img src="images/markhamsoccercamp.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="content mt-3">
                   <small>By Zane Al-Hamwy</small
-                    ><span class="text-muted ms-2">September 2024 - January 2025</span>
-                  <h4 class="card-title mt-3">QVEX Software Developer</h4>
+                    ><span class="text-muted ms-2">July 2023</span>
+                  <h4 class="card-title mt-3">Soccer Camp Counsellor</h4>
                   <div class="social-links mt-4">
                     <a href="https://www.instagram.com/zane.codes/" target="_blank">
                       <button href="" class="rounded-pill instagram">
@@ -865,7 +882,7 @@
                       </button>
                       </a>
                   </div>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                  <p class="text-muted mt-3">Soccer has always been my favourite hobby. My parents did a great job at encouraging me to continue to play soccer since I was in grade schoool. I decided to help out my local soccer club (Markham FC) by volunteering as a camp counsellor. I had the opportunity to mentor the U10 boys team by providing them training sessions and entertainment. I did not expect this experience to be as rewarding as it was. I got to really develop my outspoken skills in a low stakes environment, something I struggled with at the time. Over the course of the camp, I managed to improve my public speaking skills signifcantly. With that, my confidence developed greatly; something that has helped me in interviews and regular every day conversation.</p>
                 </div>
               </div>
              
@@ -886,24 +903,17 @@
     <section class="contact py-5" id="contact">
       <div class="heading text-center">
         <small>Get in Touch</small>
-        <h3>Any Questions? Feel Free to Contact</h3>
+        <h3>Contact Me</h3>
       </div>
       <div class="row justify-content-evenly mt-5">
         <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          
           <div class="row justify-content-evenly">
             <div class="col-1">
-              <i class="bi bi-geo-alt-fill"></i>
+              <i class="bi bi-linkedin"></i>
             </div>
             <div class="col-11">
-              <p>121 King Street Melbourne, 3000, Australia</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-telephone-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>+91 9527818693</p>
+              <p>https://www.linkedin.com/in/zanealhamwy/</p>
             </div>
           </div>
           <div class="row justify-content-evenly">
@@ -911,7 +921,7 @@
               <i class="bi bi-send-fill"></i>
             </div>
             <div class="col-11">
-              <p>codewithpawan@gmail.com</p>
+              <p>alhamwy.zane@gmail.com</p>
             </div>
           </div>
           <div class="row justify-content-evenly">
@@ -919,50 +929,11 @@
               <i class="bi bi-globe-americas"></i>
             </div>
             <div class="col-11">
-              <p>codingpawan.com</p>
+              <p>zanecodes.com</p>
             </div>
           </div>
         </div>
-        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
-          <div class="contact-form">
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Name"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="E-mail"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Mobile No."
-              />
-            </div>
-            <div class="mb-3">
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                placeholder="Message"
-                rows="5"
-              ></textarea>
-            </div>
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-              Submit
-            </button>
-          </div>
-        </div>
-      </div>
+        
     </section>
     <!-- contact section ends here -->
 

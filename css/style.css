@@ -221,8 +221,10 @@ body{
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Optional: Adds rounded corners */
+    border-radius: 10px;
+    
   }
+  
   
   /* Overlay setup */
   .overlay {
